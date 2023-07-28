@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Array</title>
+</head>
+
+<body>
+    <script>
+        function filteredEvenNumbers(arr) {
+            return arr.filter(num => num % 2 === 0);
+        }
+
+        const originalArray = [12, 34, 45, 23, 6, 78, 54, 90];
+        const filteredArray = filteredEvenNumbers(originalArray);
+
+        // Display the original array
+        document.write(`Original Array: [${originalArray}]<br>`);
+
+        // Display the filtered even numbers
+        document.write(`Filtered Even Numbers: [${filteredArray}]<br>`);
+    </script>
+</body>
+
+</html>
